@@ -2,6 +2,7 @@ package com.example.jeanc.crud_pessoa;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -37,6 +38,7 @@ public class Listar extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<List<Pessoas>> call, Throwable t) {
+                Log.e("CrudService   ", "Erro:" + t.getMessage());
             }
         });
     }

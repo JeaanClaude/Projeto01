@@ -1,8 +1,10 @@
 package com.example.jeanc.crud_pessoa;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+@JsonIgnoreProperties({"createdAt", "updatedAt"})
 public class Pessoas {
 
     @JsonProperty("ID")
