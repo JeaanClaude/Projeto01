@@ -31,6 +31,7 @@ public class Cadastrar extends AppCompatActivity {
                 Pessoas p1 = new Pessoas();
                 p1.setFirstName(etFirstName.getText().toString());
                 p1.setLastName(etLastName.getText().toString());
+
                 Call<Pessoas> call = new RetrofitConfig().getModelService().createPessoa(p1);
                 call.enqueue(new Callback<Pessoas>() {
 
@@ -45,6 +46,7 @@ public class Cadastrar extends AppCompatActivity {
                     @Override
                     public void onFailure(Call<Pessoas> call, Throwable t) {
                         Log.e("CrudService   ", "Erro:" + t.getMessage());
+
                     }
                 });
 

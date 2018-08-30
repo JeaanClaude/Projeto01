@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Deletar.class);
-                startActivity(intent);
+                Intent intent2 = new Intent(MainActivity.this,Deletar.class);
+                startActivity(intent2);
             }
         });
         btnListar.setOnClickListener(new View.OnClickListener() {

@@ -18,7 +18,7 @@ interface PessoaService {
     @GET("pessoas/{id}")
     Call<Pessoas> getPessoa(@Path("id") Long id);
 
-    @POST("pessoas   ")
+    @POST("pessoas")
     Call<Pessoas> createPessoa(@Body Pessoas pessoas);
 
     @PUT("pessoas")
