@@ -3,9 +3,7 @@
     package="com.example.jeanc.crud_pessoa">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <activity
-        android:name="br.com.olamundo.parametros/br.com.olamundo.parametros.ActSegundaTela">
-    </activity>
+
     <application
         android:usesCleartextTraffic="true"
         android:allowBackup="true"
