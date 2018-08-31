@@ -38,7 +38,7 @@ public class Listar extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<List<Pessoas>> call, Throwable t) {
-                Log.e("CrudService   ", "Erro:" + t.getMessage());
+                Log.e("PessoaService   ", "Erro:" + t.getMessage());
             }
         });
     }

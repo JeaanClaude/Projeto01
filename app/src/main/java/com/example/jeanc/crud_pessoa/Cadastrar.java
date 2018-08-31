@@ -45,7 +45,7 @@ public class Cadastrar extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<Pessoas> call, Throwable t) {
-                        Log.e("CrudService   ", "Erro:" + t.getMessage());
+                        Log.e("PessoasService   ", "Erro:" + t.getMessage());
 
                     }
                 });
